@@ -1,0 +1,388 @@
+// Hero section styles
+.hero {
+  background-image: url('../images/bghero.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3rem 2rem 5rem;
+  text-align: center;
+  position: relative;
+}
+
+.hero-banner {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  color: #4b5563;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.rocket-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  img {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+  }
+}
+
+.hero-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero-headline {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  font-family: 'Exo 2', sans-serif;
+
+  .highlight {
+    color: #2D96BC;
+    position: relative;
+    display: inline-block;
+    
+    .highlight-underline {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background-color: #fbbf24;
+      border-radius: 2px;
+    }
+  }
+}
+
+.hero-subheadline {
+  font-size: 1.25rem;
+  // color: #6b7280;
+  font-weight: 600;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.works-with {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 450px;
+  padding: 20px;
+
+border-radius: 10px;
+  align-items: center;
+  gap: 1rem;
+  background: linear-gradient(90.37deg, #5ED3FF -12.35%, #6EC6FE 0.67%, #EB65F4 100.24%, #FD58F2 114.28%);
+
+  // background: linear-gradient(to right, #2D96BC, #2D96BC);
+}
+
+.works-with-label {
+  font-size: 0.95rem;
+  color: #000000;
+  font-weight: 200;
+  font-size: larger;
+  margin-left: 10px;
+}
+
+.crm-logos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.crm-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
+  flex-shrink: 0;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 8px;
+  }
+
+  &.hubspot {
+    background-color: #ff7a59;
+  }
+
+  &.pipedrive {
+    background-color: #1aad19;
+  }
+
+  &.salesforce {
+    background-color: #00a1e0;
+  }
+}
+
+.ratings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.rating-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.rating-icon-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.stars {
+  color: #fbbf24;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.rating-score {
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 0.95rem;
+}
+
+.rating-source {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-left: 0.25rem;
+}
+
+.hero-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.btn-chrome {
+  background-color: #374151;
+  color: white;
+  border: 2px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.875rem 1.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  
+  &:hover {
+    background-color: #1f2937;
+    border-color: #e5e7eb;
+  }
+}
+
+.btn-chrome-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  flex: 1;
+}
+
+.btn-chrome-label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 2px;
+}
+
+.btn-chrome-store {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+.btn-chrome-logo {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.chrome-icon {
+  font-size: 1.2rem;
+}
+
+.btn-trial {
+  padding: 1rem 5rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  background-color: #B3FC6A;
+  color: #1f2937;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 0 2px 4px rgba(179, 252, 106, 0.3);
+
+  &:hover {
+    background-color: #9ef04a;
+    box-shadow: 0 4px 8px rgba(179, 252, 106, 0.4);
+    transform: translateY(-1px);
+  }
+}
+
+// Tablet responsiveness
+@media (max-width: 1024px) {
+  .hero-headline {
+    font-size: 2.75rem;
+  }
+  
+  .hero-subheadline {
+    font-size: 1.1rem;
+  }
+}
+
+// Mobile responsiveness
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 1rem 3rem;
+  }
+
+  .hero-headline {
+    font-size: 2rem;
+    
+    .highlight {
+      .highlight-underline {
+        height: 3px;
+      }
+    }
+  }
+
+  .hero-subheadline {
+    font-size: 1rem;
+  }
+
+  .works-with {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    
+    .works-with-label {
+      width: 100%;
+      text-align: center;
+    }
+    
+    .crm-logos {
+      justify-content: center;
+    }
+  }
+
+  .ratings {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    width: 100%;
+
+    .btn-chrome,
+    .btn-trial {
+      width: 100%;
+      max-width: 100%;
+      min-width: auto;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 1.5rem 0.75rem 2.5rem;
+  }
+  
+  .hero-headline {
+    font-size: 1.75rem;
+    
+    .highlight {
+      .highlight-underline {
+        height: 2px;
+      }
+    }
+  }
+  
+  .hero-subheadline {
+    font-size: 0.95rem;
+  }
+
+  .works-with {
+    padding: 0.75rem;
+    
+    .works-with-label {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.75rem;
+    }
+  }
+
+  .crm-logos {
+    gap: 0.75rem;
+  }
+
+  .crm-logo {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .rating-icon-img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .stars {
+    font-size: 1rem;
+  }
+  
+  .hero-cta {
+    gap: 0.75rem;
+    
+    .btn-chrome,
+    .btn-trial {
+      padding: 0.875rem 1.25rem;
+      font-size: 0.95rem;
+    }
+  }
+}
+

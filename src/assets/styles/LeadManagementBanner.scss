@@ -1,0 +1,270 @@
+// Lead Management Banner section styles
+.lead-management-banner {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  background-color: #EAEFFA;
+  padding: 5rem 2rem;
+  margin-bottom: 5rem;
+}
+
+// Header Section
+.banner-header {
+  margin-bottom: 3rem;
+}
+
+.banner-headline {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+}
+
+.banner-subheadline {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e0f2fe;
+  margin: 0;
+  line-height: 1.4;
+}
+
+// Service Logos
+.service-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.service-logo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.service-logo-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.service-logo-text {
+  font-size: 0.95rem;
+  color: #e0f2fe;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.capterra {
+  flex-direction: row;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.capterra-rating {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.capterra-text {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stars {
+  color: #fbbf24;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.rating-score {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.top-rated {
+  font-size: 0.85rem;
+  color: #e0f2fe;
+  font-weight: 500;
+}
+
+// Banner Image
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  margin-bottom: 3rem;
+}
+
+// CTA Button
+.banner-cta {
+  margin-top:5rem;
+  text-align: center;
+}
+
+.get-started-button {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  border: none;
+  padding: 1.25rem 3rem;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 16px rgba(16, 185, 129, 0.4);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  &:hover {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    box-shadow: 0 12px 24px rgba(16, 185, 129, 0.5);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.get-started-button:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+// Tablet responsiveness
+@media (max-width: 1024px) {
+  .banner-container {
+    padding: 4rem 1.5rem;
+  }
+
+  .banner-headline {
+    font-size: 2rem;
+  }
+
+  .banner-subheadline {
+    font-size: 1.25rem;
+  }
+
+  .service-logos {
+    gap: 2rem;
+  }
+
+  .service-logo-img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+// Mobile responsiveness
+@media (max-width: 768px) {
+  .banner-container {
+    padding: 3rem 1rem;
+  }
+
+  .banner-headline {
+    font-size: 1.75rem;
+  }
+
+  .banner-subheadline {
+    font-size: 1.1rem;
+  }
+
+  .service-logos {
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .service-logo-item {
+    flex: 0 0 auto;
+  }
+
+  .capterra {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .capterra-rating {
+    align-items: center;
+    text-align: center;
+  }
+
+  .get-started-button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+// Small mobile devices
+@media (max-width: 480px) {
+  .banner-container {
+    padding: 2.5rem 0.75rem;
+  }
+
+  .banner-headline {
+    font-size: 1.5rem;
+  }
+
+  .banner-subheadline {
+    font-size: 1rem;
+  }
+
+  .service-logos {
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .service-logo-img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .service-logo-text {
+    font-size: 0.85rem;
+  }
+
+  .capterra {
+    padding: 0.75rem 1rem;
+  }
+
+  .get-started-button {
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
+

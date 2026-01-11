@@ -1,0 +1,139 @@
+// Key Features section styles
+.key-features {
+  background-color: #ffffff;
+  padding: 3rem 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.features-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 5%,
+    black 95%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 5%,
+    black 95%,
+    transparent 100%
+  );
+}
+
+.features-track {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  animation: scroll 40s linear infinite;
+  will-change: transform;
+  width: fit-content;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  flex-shrink: 0;
+  min-width: 280px;
+  padding: 0 1rem;
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  background-color: #f9fafb;
+  border-radius: 16px;
+  flex-shrink: 0;
+}
+
+.feature-text {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #1f2937;
+  line-height: 1.5;
+  white-space: nowrap;
+  
+  strong {
+    font-weight: 700;
+    color: #1f2937;
+  }
+}
+
+// Continuous scrolling animation
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 3));
+  }
+}
+
+// Pause animation on hover
+.features-wrapper:hover .features-track {
+  animation-play-state: paused;
+}
+
+// Mobile responsiveness
+@media (max-width: 768px) {
+  .key-features {
+    padding: 2.5rem 0;
+  }
+
+  .features-track {
+    gap: 3rem;
+    animation-duration: 35s;
+  }
+
+  .feature-item {
+    min-width: 240px;
+    gap: 0.75rem;
+  }
+
+  .feature-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 2.5rem;
+  }
+
+  .feature-text {
+    font-size: 1rem;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 480px) {
+  .features-track {
+    gap: 2rem;
+    animation-duration: 30s;
+  }
+
+  .feature-item {
+    min-width: 200px;
+    padding: 0 0.75rem;
+  }
+
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+
+  .feature-text {
+    font-size: 0.95rem;
+  }
+}
+

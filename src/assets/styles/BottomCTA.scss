@@ -1,0 +1,117 @@
+
+.cta-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+  padding: 2rem 1rem;
+}
+
+.hours-icon {
+  position: absolute;
+  top: -100%;
+  left: 100%;
+  z-index: 1;
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  
+  @media (max-width: 1024px) {
+    width: 200px;
+    height: 200px;
+    top: -150%;
+    left: 80%;
+  }
+  
+  @media (max-width: 768px) {
+    width: 150px;
+    height: 150px;
+    top: -120%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  @media (max-width: 480px) {
+    width: 120px;
+    height: 120px;
+    top: -100%;
+  }
+}
+
+.cta-button {
+  background-color: #B3FC6A;
+  border: none;
+  padding: 1.25rem 3rem;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 8px 16px rgba(16, 185, 129, 0.4);
+  z-index: 1;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: #059669;
+    box-shadow: 0 12px 24px rgba(16, 185, 129, 0.5);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Tablet responsiveness
+@media (max-width: 1024px) {
+  .cta-container {
+    padding: 1.5rem 1rem;
+  }
+  
+  .cta-button {
+    padding: 1.125rem 2.5rem;
+    font-size: 1.15rem;
+  }
+}
+
+// Mobile responsiveness
+@media (max-width: 768px) {
+  .cta-container {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+  }
+
+  .cta-button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+// Small mobile devices
+@media (max-width: 480px) {
+  .cta-container {
+    padding: 1rem 0.75rem;
+  }
+  
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.875rem 1.5rem;
+    max-width: 100%;
+  }
+}
+
+// Extra small devices
+@media (max-width: 360px) {
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 0.75rem 1.25rem;
+  }
+}
+

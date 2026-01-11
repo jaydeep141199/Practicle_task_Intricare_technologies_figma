@@ -1,0 +1,819 @@
+// How It Works section styles
+.how-it-works {
+  background-image: url('../images/workbg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.how-it-works-ball {
+  background-image: url('../images/Ball.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: -80px;
+  right: 0;
+  z-index: 1;
+}
+
+.how-it-works-container {
+  max-width: 90%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.how-it-works-header {
+  margin-bottom: 4rem;
+  text-align: left;
+}
+
+.how-it-works-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color:#090F4E;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.how-it-works-subtitle {
+  font-size: 0.95rem;
+  color: #090F4E;
+  font-weight: 200;
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+  position: relative;
+  // padding-top: 3rem;
+}
+
+.steps-connector {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 90%;
+  height: 100px;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.6;
+  
+  path {
+    stroke: #2D96BC;
+    stroke-width: 7;
+    fill: none;
+  }
+}
+
+.step-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 0 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.step-number {
+  font-size: 6rem;
+  font-weight: 800;
+  color: #2D96BC;
+  line-height: 1.5;
+  font-family: 'Sriracha', sans-serif;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.step-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.step-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.step-description {
+  font-size: 1rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  flex: 1;
+}
+
+.step-visual-wrapper {
+  margin-top: auto;
+}
+
+.step-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  min-height: 200px;
+}
+
+// Step 1 Visual Styles
+.step-1-visual {
+  .visual-chrome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .chrome-logo {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #4285f4, #34a853, #fbbc05, #ea4335);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  .arrow-down {
+    color: #60a5fa;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .leadcrm-logo {
+    width: 50px;
+    height: 50px;
+    background: #2563eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+
+  .visual-browser {
+    width: 100%;
+  }
+
+  .browser-window {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .browser-header {
+    background: #f3f4f6;
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .browser-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #d1d5db;
+  }
+
+  .browser-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .browser-search {
+    font-size: 0.85rem;
+    color: #6b7280;
+    padding: 0.5rem;
+    background: #f9fafb;
+    border-radius: 4px;
+  }
+
+  .browser-button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+
+// Step 2 Visual Styles
+.step-2-visual {
+  .linkedin-logo {
+    width: 60px;
+    height: 60px;
+    background: #0077b5;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .linkedin-interface {
+    width: 100%;
+  }
+
+  .linkedin-filters {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .linkedin-filters span {
+    padding: 0.4rem 0.8rem;
+    background: #f3f4f6;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: #6b7280;
+    cursor: pointer;
+
+    &.filter-active {
+      background: #2563eb;
+      color: white;
+    }
+  }
+
+  .linkedin-profiles {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .profile-card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: #f9fafb;
+    border-radius: 8px;
+  }
+
+  .profile-avatar {
+    width: 40px;
+    height: 40px;
+    background: #d1d5db;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .profile-info {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .profile-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.25rem;
+  }
+
+  .profile-title {
+    font-size: 0.75rem;
+    color: #6b7280;
+  }
+
+  .profile-connect {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+}
+
+// Step 3 Visual Styles
+.step-3-visual {
+  .enriched-profile {
+    width: 100%;
+    background: #f9fafb;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .profile-header {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .profile-photo {
+    width: 60px;
+    height: 60px;
+    background: #d1d5db;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .profile-details {
+    flex: 1;
+  }
+
+  .profile-name-large {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+  }
+
+  .profile-actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .action-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .contact-label {
+    font-size: 0.75rem;
+    color: #6b7280;
+    font-weight: 600;
+  }
+
+  .contact-value {
+    font-size: 0.85rem;
+    color: #1f2937;
+    font-weight: 500;
+  }
+
+  .integration-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+
+  .integration-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #60a5fa, #3b82f6);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin: 0 auto;
+  }
+}
+
+// Step 4 Visual Styles
+.step-4-visual {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  .sync-sources {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .sync-button-source {
+    background: linear-gradient(135deg, #f59e0b, #f97316);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .sync-arrows {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex: 1;
+  }
+
+  .dashed-line {
+    height: 2px;
+    background: repeating-linear-gradient(
+      to right,
+      #60a5fa 0px,
+      #60a5fa 4px,
+      transparent 4px,
+      transparent 8px
+    );
+  }
+
+  .sync-destination {
+    display: flex;
+    align-items: center;
+  }
+
+  .sync-button-main {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .cursor-icon {
+    font-size: 1.2rem;
+  }
+}
+
+.how-it-works-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.cta-button-primary {
+  background: #B3FC6A;
+  color: #1f2937;
+  border: none;
+  padding: 1.25rem 3rem;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 16px rgba(16, 185, 129, 0.4);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  &:hover {
+    background: #059669;
+    color: white;
+    box-shadow: 0 12px 24px rgba(16, 185, 129, 0.5);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.cta-arrow {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.cta-button-primary:hover .cta-arrow {
+  transform: translateX(4px);
+}
+
+// Tablet responsiveness
+@media (max-width: 1024px) {
+  .how-it-works {
+    padding: 4rem 1.5rem;
+  }
+
+  .how-it-works-title {
+    font-size: 2.5rem;
+  }
+
+  .how-it-works-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .steps-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+
+  .steps-connector {
+    display: none;
+  }
+
+  .step-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .step-number {
+    font-size: 3.5rem;
+  }
+
+  .step-title {
+    font-size: 1.35rem;
+  }
+
+  .step-description {
+    font-size: 0.95rem;
+  }
+}
+
+// Mobile responsiveness
+@media (max-width: 768px) {
+  .how-it-works {
+    padding: 3rem 1rem;
+  }
+
+  .how-it-works-header {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .how-it-works-title {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .how-it-works-subtitle {
+    font-size: 1rem;
+  }
+
+  .steps-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-top: 0;
+  }
+
+  .steps-connector {
+    display: none;
+  }
+
+  .step-card {
+    padding: 1.5rem;
+  }
+
+  .step-number {
+    font-size: 3rem;
+  }
+
+  .step-title {
+    font-size: 1.25rem;
+  }
+
+  .step-description {
+    font-size: 0.9rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .step-visual {
+    min-height: 180px;
+  }
+
+  .cta-button-primary {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+// Small mobile devices
+@media (max-width: 480px) {
+  .how-it-works {
+    padding: 2.5rem 0.75rem;
+  }
+
+  .how-it-works-title {
+    font-size: 1.75rem;
+  }
+
+  .how-it-works-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .steps-container {
+    gap: 1.5rem;
+  }
+
+  .step-card {
+    padding: 1.25rem;
+  }
+
+  .step-number {
+    font-size: 2.5rem;
+  }
+
+  .step-title {
+    font-size: 1.1rem;
+  }
+
+  .step-description {
+    font-size: 0.85rem;
+  }
+
+  .step-visual {
+    min-height: 150px;
+  }
+
+  // Step 1 adjustments
+  .step-1-visual {
+    .chrome-logo {
+      width: 50px;
+      height: 50px;
+      font-size: 1.25rem;
+    }
+
+    .leadcrm-logo {
+      width: 40px;
+      height: 40px;
+      font-size: 0.8rem;
+    }
+
+    .browser-content {
+      padding: 0.75rem;
+    }
+  }
+
+  // Step 2 adjustments
+  .step-2-visual {
+    .linkedin-logo {
+      width: 50px;
+      height: 50px;
+      font-size: 1.25rem;
+    }
+
+    .profile-card {
+      padding: 0.5rem;
+    }
+
+    .profile-avatar {
+      width: 35px;
+      height: 35px;
+    }
+
+    .profile-name {
+      font-size: 0.8rem;
+    }
+
+    .profile-title {
+      font-size: 0.7rem;
+    }
+
+    .profile-connect {
+      padding: 0.3rem 0.6rem;
+      font-size: 0.7rem;
+    }
+  }
+
+  // Step 3 adjustments
+  .step-3-visual {
+    .enriched-profile {
+      padding: 0.75rem;
+    }
+
+    .profile-photo {
+      width: 50px;
+      height: 50px;
+    }
+
+    .profile-name-large {
+      font-size: 0.9rem;
+    }
+
+    .action-btn {
+      padding: 0.3rem 0.6rem;
+      font-size: 0.75rem;
+    }
+
+    .integration-icon {
+      width: 35px;
+      height: 35px;
+      font-size: 0.75rem;
+    }
+  }
+
+  // Step 4 adjustments
+  .step-4-visual {
+    flex-direction: column;
+    gap: 0.75rem;
+
+    .sync-sources {
+      width: 100%;
+    }
+
+    .sync-button-source {
+      width: 100%;
+      padding: 0.4rem 0.8rem;
+      font-size: 0.75rem;
+    }
+
+    .sync-arrows {
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .dashed-line {
+      width: 2px;
+      height: 40px;
+      background: repeating-linear-gradient(
+        to bottom,
+        #60a5fa 0px,
+        #60a5fa 4px,
+        transparent 4px,
+        transparent 8px
+      );
+    }
+
+    .sync-button-main {
+      width: 100%;
+      padding: 0.6rem 1.25rem;
+      font-size: 0.85rem;
+    }
+  }
+
+  .cta-button-primary {
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
+
+// Extra small devices
+@media (max-width: 360px) {
+  .how-it-works {
+    padding: 2rem 0.5rem;
+  }
+
+  .how-it-works-title {
+    font-size: 1.5rem;
+  }
+
+  .step-card {
+    padding: 1rem;
+  }
+
+  .step-number {
+    font-size: 2rem;
+  }
+
+  .step-title {
+    font-size: 1rem;
+  }
+
+  .step-description {
+    font-size: 0.8rem;
+  }
+}
+
