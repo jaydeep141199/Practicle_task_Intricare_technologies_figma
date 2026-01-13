@@ -23,54 +23,54 @@ const Footer = () => {
             </p>
             <div className="social-icons">
               <a href="#" className="social-icon" aria-label="Facebook">
-                <img src={facebookIcon} alt="Facebook" width={50} height={50} />
+                <img src={facebookIcon} alt="Facebook" />
               </a>
               <a href="#" className="social-icon" aria-label="Twitter">
-                <img src={twitterIcon} alt="Twitter" width={50} height={50} />
+                <img src={twitterIcon} alt="Twitter" />
               </a>
               <a href="#" className="social-icon" aria-label="LinkedIn">
-                <img src={linkedinIcon} alt="LinkedIn" width={50} height={50} />
+                <img src={linkedinIcon} alt="LinkedIn" />
               </a>
               <a href="#" className="social-icon" aria-label="Instagram">
-                <img src={instagramIcon} alt="Instagram" width={50} height={50} />
+                <img src={instagramIcon} alt="Instagram" />
               </a>
             </div>
           </div>
 
-          {/* Middle Sections */}
-          <div className="footer-links">
-            <div className="footer-column">
-              <h3 className="footer-column-title">Integrations</h3>
-              <ul className="footer-list">
-                <li><a href="#">HubSpot</a></li>
-                <li><a href="#">Salesforce</a></li>
-                <li><a href="#">Pipedrive</a></li>
-                <li style={{ display: 'inline-block', gap: '10px' }}>
-                  <a href="#">Close.io</a>
-                  <span className="coming-soon" style={{ marginLeft: '10px' }}>Coming Soon</span>
-                </li>
-                <li style={{ display: 'inline-block', gap: '10px' }}>
-                  <a href="#">Insightly</a>
-                  <span className="coming-soon" style={{ marginLeft: '10px' }}>Coming Soon</span>
-                </li>
-              </ul>
-            </div>
+          {/* Integrations Column */}
+          <div className="footer-column">
+            <h3 className="footer-column-title">Integrations</h3>
+            <ul className="footer-list">
+              <li><a href="#">HubSpot</a></li>
+              <li><a href="#">Salesforce</a></li>
+              <li><a href="#">Pipedrive</a></li>
+              <li>
+                <a href="#">Close.io</a>
+                <span className="coming-soon">Coming Soon</span>  
+              </li>
+              <li>
+                <a href="#">Insightly</a>
+                <span className="coming-soon">Coming Soon</span>
+              </li>
+            </ul>
+          </div>
 
-            <div className="footer-column">
-              <h3 className="footer-column-title">Alternative</h3>
-              <ul className="footer-list">
-                <li><a href="#">Surfe VS LeadCRM</a></li>
-                <li><a href="#">Linkmatch Alternative</a></li>
-              </ul>
-            </div>
+          {/* Alternative Column */}
+          <div className="footer-column">
+            <h3 className="footer-column-title">Alternative</h3>
+            <ul className="footer-list">
+              <li><a href="#">Surfe VS LeadCRM</a></li>
+              <li><a href="#">Linkmatch Alternative</a></li>
+            </ul>
+          </div>
 
-            <div className="footer-column">
-              <h3 className="footer-column-title">Legal</h3>
-              <ul className="footer-list">
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Use</a></li>
-              </ul>
-            </div>
+          {/* Legal Column */}
+          <div className="footer-column">
+            <h3 className="footer-column-title">Legal</h3>
+            <ul className="footer-list">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+            </ul>
           </div>
 
           {/* Right Section - Contact */}
@@ -99,16 +99,18 @@ const Footer = () => {
                 <a href="#">Help Center</a>
               </div>
             </div>
-              <img src={chromeWebStoreIcon} alt="Chrome Web Store" className="chrome-logo" width="100%" height="auto" />
+            <a href="#" className="chrome-button-wrapper">
+              <img src={chromeWebStoreIcon} alt="Available in Chrome" className="chrome-button" />
+            </a>
           </div>
         </div>
 
         {/* Bottom Section */}
         <div className="footer-bottom">
-          <p className="footer-disclaimer">
-            Disclaimer : LeadCRM is not endorsed or certified by Linkedin. All Linkedin(tm) logos and trademarks displayed on this tool are property of LinkedIn. LeadCRM is distributed AS IS. Your use of LeadCRM is at your own risk.
-          </p>
           <div className="footer-divider"></div>
+          <p className="footer-disclaimer">
+            Disclaimer: LeadCRM is not endorsed or certified by Linkedin. All Linkedin(tm) logos and trademarks displayed on this tool are property of Linkedin. LeadCRM is distributed AS IS. Your use of LeadCRM is at your own risk.
+          </p>
           <p className="footer-copyright">
             Copyright © 2025 LeadCRM. All Rights Reserved.
           </p>

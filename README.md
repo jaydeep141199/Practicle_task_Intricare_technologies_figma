@@ -58,7 +58,7 @@ practical-task-desgin/
 - **React 18.2.0** - UI library
 - **Vite 5.0.0** - Build tool and dev server
 - **SCSS/Sass** - CSS preprocessor
-- **Google Fonts** - Typography (Exo 2, Sriracha)
+- **Google Fonts** - Typography (Inter, Exo 2, Sriracha)
 
 ## 📦 Installation
 
@@ -69,7 +69,10 @@ practical-task-desgin/
 
 ### Setup Steps
 
-1. **Clone the repository** (if applicable) or navigate to the project directory
+1. **Clone the repository** (if applicable) or navigate to the project directory:
+```bash
+cd practical-task-desgin
+```
 
 2. **Install dependencies:**
 ```bash
@@ -82,6 +85,10 @@ npm run dev
 ```
 
 4. **Open your browser** and navigate to the URL shown in the terminal (usually `http://localhost:5173`)
+
+### Environment Setup
+
+This project uses Vite for development. No environment variables are required for basic functionality. All assets are included in the project structure.
 
 ## 🏗️ Build Commands
 
@@ -115,6 +122,7 @@ Previews the production build locally before deployment.
 
 ### Typography
 - **Primary Font**: Exo 2 (Google Fonts)
+- **Body Font**: Inter (Google Fonts)
 - **Decorative Font**: Sriracha (for special text)
 - **Headings**: 700-800 weight
 - **Body Text**: 400-600 weight
@@ -222,6 +230,27 @@ Previews the production build locally before deployment.
 - Clean code structure with comments
 - Image assets organized in `/assets/images/`
 - Styles organized by component
+- Each component has its own SCSS file for maintainability
+- Responsive design implemented with mobile-first approach
+- All images should be placed in `/src/assets/images/` directory
+
+## 🚀 Deployment
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+This will create an optimized production build in the `dist` directory.
+
+### Deploy to Static Hosting
+
+The `dist` folder can be deployed to any static hosting service:
+- **Vercel**: `vercel deploy`
+- **Netlify**: Drag and drop the `dist` folder
+- **GitHub Pages**: Configure to serve from `dist` directory
+- **AWS S3**: Upload `dist` contents to S3 bucket
 
 ## 📄 License
 
@@ -232,5 +261,13 @@ This project is part of a practical task/design implementation.
 For questions or support, visit the LeadCRM website or contact support@leadcrm.io
 
 ---
+
+## ✅ Project Status
+
+- ✅ All components implemented
+- ✅ Responsive design complete
+- ✅ All styles and animations working
+- ✅ Cross-browser compatibility tested
+- ✅ Production-ready build configuration
 
 **Note**: This is a frontend implementation project. Make sure all image assets are properly placed in the `/src/assets/images/` directory before running the project.
